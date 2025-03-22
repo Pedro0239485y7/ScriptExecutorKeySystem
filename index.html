@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Key Loader</title>
+</head>
+<body>
+    <h1>Random Key:</h1>
+    <p id="keyDisplay"></p>
+
+    <script>
+        const keys = [
+            "BLGWKMH6AS5QXJE97TCFDN",
+            "QYKMHBDVA8ZXGW3NC27JSP",
+            "QNR5GL32PKWD69SVAMU7HT"
+        ];
+        
+        document.getElementById("keyDisplay").innerText = keys[Math.floor(Math.random() * keys.length)];
+    </script>
+</body>
+</html>
